@@ -8,10 +8,10 @@ function App() {
   const [lastUpdate, setLastUpdate] = useState("")
   useEffect(() => {
     const fetchData = () => {
-      fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false&x_cg_demo_api_key=CG-XHU2dTRjVfMr7d8LMy9uo8Wv")
+      fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&sparkline=false&x_cg_demo_api_key=CG-XHU2dTRjVfMr7d8LMy9uo8Wv")
         .then((response) => response.json())
         .then((data) => { setCoins(data) });
-      const currentDateTime = new Date().toLocaleString('en-US', { timeZone: 'UTC' });
+      const currentDateTime = new Date().toLocaleString();
       setLastUpdate(currentDateTime);
     };
     fetchData(); // Fetch data immediately on mount

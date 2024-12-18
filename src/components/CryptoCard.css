@@ -1,14 +1,15 @@
 .crypto-card {
-    background-color: #09090B;
+    background-color: #141418;
     padding: 2rem;
-    border: 1px solid #292828;
+    border: 1px solid #3d3b3b;
     border-radius: .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    font-size: .85rem;
+    font-size: 1rem;
+    transition: border .3s;
 }
 .coin-price {
     display: flex;
@@ -40,4 +41,7 @@
 }
 .negative {
     color: red;
+}
+.selected {
+    border: 1px solid #fff;
 }

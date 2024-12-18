@@ -1,19 +1,19 @@
 import "./CryptoCard.css";
-export default function CryptoCard(props) {
+export default function CryptoCard({ id, name, symbol, price, change, image }) {
   return (
-    <div className="crypto-card">
+    <div className="crypto-card" id={id}>
       <div className="coin-price">
-        <img src={props.image} alt={props.name} />
+        <img src={image} alt={name} />
         <p className="coin-name">
-          {props.name} <span>{props.symbol.toUpperCase()}</span>
+          <span>{symbol.toUpperCase()}</span>
         </p>
       </div>
       <div className="trend-price">
-        <span className={`trend ${props.change > 0 ? "positive" : "negative"}`}>
-          <i className={`fa-solid fa-caret-${props.change >= 0 ? "up" : "down"}`}></i>
-          {props.change < 0 ? (props.change * -1).toFixed(2) : (props.change).toFixed(2) }%
+        <span className={`trend ${change > 0 ? "positive" : "negative"}`}>
+          <i className={`fa-solid fa-caret-${change >= 0 ? "up" : "down"}`}></i>
+          {change < 0 ? (change * -1).toFixed(2) : (change).toFixed(2) }%
         </span>
-        <span>${(props.price).toLocaleString('en-US', { hour12: false })}</span>
+        <span>${(price).toLocaleString('en-US', { hour12: false })}</span>
       </div>
     </div>
   );
