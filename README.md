@@ -6,7 +6,7 @@ Cryptolyze is a modern web application that delivers real-time cryptocurrency ma
 
 - 📈 **Real-time cryptocurrency market data**  
 - 📊 **Key metrics at a glance**: Total market cap, volume, and supply  
-- 💹 **Detailed cryptocurrency cards**: Price, price change, and trends  
+- 💹 **Detailed cryptocurrency information**: Price, price change, and trends  
 - 📱 **Responsive design**: Optimized for mobile and desktop  
 - 🔄 **Automatic updates**: Data refreshes every 25 minutes  
 
