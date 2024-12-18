@@ -1,29 +1,35 @@
-# Cryptolyze
+# 🚀 Cryptolyze 🚀  
 
-Cryptolyze is a sleek and modern  web application that provides real-time data on cryptocurrency markets. Leveraging the powerful CoinGecko API, Cryptolyze displays key metrics such as total market capitalization, total volume, and total supply of cryptocurrencies. The data is refreshed every 25 minutes to ensure users always have the most up-to-date information.
+Cryptolyze is a modern web application that delivers real-time cryptocurrency market data. Powered by the CoinGecko API, it provides key insights such as total market capitalization, total volume, and total supply of cryptocurrencies. Stay updated with data refreshed every 25 minutes.  
 
+---
 
-## Features
+## 🌟 Features  
 
-- Real-time Data: Fetches and displays the latest cryptocurrency market data.
-- Responsive Design: Optimized for both desktop and mobile devices.
-- Overview Cards: Displays key metrics like total market cap, total volume, and total supply.
-- Crypto Cards: Shows individual cryptocurrency details including price, price change, and market trends.
-- Automatic Updates: Data is refreshed every 25 minutes.
+- 📈 **Real-time cryptocurrency market data**  
+- 📊 **Key metrics at a glance**: Total market cap, volume, and supply  
+- 💹 **Detailed cryptocurrency cards**: Price, price change, and trends  
+- 📱 **Responsive design**: Optimized for mobile and desktop  
+- 🔄 **Automatic updates**: Data refreshes every 25 minutes  
 
-## Technologies Used
+---
 
-- React
-- Vite
-- Hugging Face Inference API
-- React Markdown
-- CSS
+## 🛠️ Technologies Used  
 
-## Getting Started
+- ⚛️ **React**  
+- ⚡ **Vite**  
+- 🌐 **CoinGecko API**  
+- 🎨 **CSS**  
+- 📏 **ESLint**  
 
-### Prerequisites
+---
 
-- Node.js and npm installed on your machine
+## 🚀 Getting Started  
+
+### Prerequisites  
+
+- 🖥️ Node.js (v14 or higher)  
+- 📦 npm or yarn  
 
 ### Installation
 
