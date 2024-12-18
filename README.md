@@ -41,4 +41,5 @@ Cryptolyze is a modern web application that delivers real-time cryptocurrency ma
 
 1. Start the development server:
 
-2. Open your browser and navigate to http://localhost:3000.
+   ```sh
+   npm run dev
