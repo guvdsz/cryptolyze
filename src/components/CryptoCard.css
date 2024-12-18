@@ -1,0 +1,43 @@
+.crypto-card {
+    background-color: #09090B;
+    padding: 2rem;
+    border: 1px solid #292828;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: .85rem;
+}
+.coin-price {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.coin-price img {
+    width: 50px;
+}
+.coin-name {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.trend-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    text-align: center;
+}
+.trend {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.trend.positive {
+    color: green;
+}
+.negative {
+    color: red;
+}

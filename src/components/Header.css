@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 90vw;
+    max-width: 1000px;
+}
+.overview-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 475px));
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
