@@ -1,10 +1,10 @@
-# 🚀 Cryptolyze 🚀  
+# 📈 Cryptolyze   
 
 Cryptolyze is a modern web application that delivers real-time cryptocurrency market data. Powered by the CoinGecko API, it provides key insights such as total market capitalization, total volume, and total supply of cryptocurrencies. Stay updated with data refreshed every 25 minutes.  
 
 ## 🌟 Features  
 
-- 📈 **Real-time cryptocurrency market data**  
+- 🪙 **Real-time cryptocurrency market data**  
 - 📊 **Key metrics at a glance**: Total market cap, volume, and supply  
 - 💹 **Detailed cryptocurrency information**: Price, price change, and trends  
 - 📱 **Responsive design**: Optimized for mobile and desktop  
