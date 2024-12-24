@@ -32,10 +32,6 @@ Cryptolyze is a modern web application that delivers real-time cryptocurrency ma
    ```sh
    git clone https://github.com/guvdsz/Cryptolyze.git
    cd Cryptolyze
-   
-2. Install the dependencies:
-
-- Create a .env file in the root of the project and add your Hugging Face API key:
 
 ### Running the Application
 
