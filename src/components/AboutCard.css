@@ -1,0 +1,21 @@
+.about-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: auto;
+    background-color: #111827;
+    padding: 3rem;
+    border-radius: 10px;
+}
+.about-card .i {
+    font-size: 5rem;
+}
+.about-card h3 {
+    font-size: 2rem;
+}
+.about-card p {
+    font-size: 1.25rem;
+    color: rgb(156 163 175);
+}
