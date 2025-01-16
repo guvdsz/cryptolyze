@@ -1,9 +1,11 @@
-import "./Main.css";
-import CryptoCard from "./CryptoCard";
+import "./Home.css";
+import CryptoCard from "../components/CryptoCard"
 import { useEffect } from "react";
 import { useState } from "react";
-import OverviewCard from "./OverViewCard";
-export default function Main(props) {
+import { Link, NavLink } from "react-router-dom";
+import OverviewCard from "../components/OverViewCard";
+export default function Home(props) {
+  console.log(props.totalSupply)
   const [coinSelect, setCointSelect] = useState("") 
   const cryptoCards = props.coins.map((coin) => {
     return (

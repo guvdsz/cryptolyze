@@ -6,20 +6,27 @@ header {
     gap: 4rem;
     padding: 1.5rem 2rem;
     border-bottom: 1px solid #111827;
-    margin-bottom: 2.5rem;
+    background-color: black;
 }
-header nav {
+.header-wrapper {
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+header .default-nav {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
 }
-header nav ul {
+.nav-links {
     list-style-type: none;
     display: flex;
     gap: 2rem;
 }
-nav ul li a {
+.nav-links a {
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -32,11 +39,17 @@ nav ul li a {
         color: #fff;
     }
 }
+.nav-links a.active {
+    color: #fff;
+    & .icon {
+        color: #fff;
+    }
+}
 .icon {
     color: #c5c5c5;
     font-size: 1.25rem;
 }
-header nav > a {
+header .default-nav > a {
     display: flex;
     text-decoration: none;
     color: #fff;
@@ -45,7 +58,7 @@ header nav > a {
     gap: .75rem;
     font-weight: bold;
 }
-header nav > a .i {
+header .default-nav > a .i {
     font-size: 2.75rem;
 }
 .overview-container {
@@ -55,4 +68,50 @@ header nav > a .i {
     gap: 1.5rem;
     justify-content: center;
     align-items: center;
+}
+.nav-btn {
+    display: none;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: all .3s;
+    border-bottom: 1px solid #111827;
+    background-color: black;
+}
+.menu.open {
+    display: flex;
+    height: 150px;
+    padding: 1.5rem;
+}
+
+@media screen and (max-width: 552px) {
+    .nav-btn {
+        display: flex;
+    }
+    .default-nav .nav-links {
+        display: none !important;
+    }
+    .nav-links {
+        opacity: 0;
+        padding: 1.5rem 0rem;
+        transition: all .1s;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-links.open {
+        transition: all .1s;
+        opacity: 1;
+    }
 }

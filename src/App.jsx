@@ -2,8 +2,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header";
-import Main from "./components/Main";
+import Home from "./pages/Home";
 import About from "./pages/About";
+import Crypto from "./pages/Crypto";
 import { Router, BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   const [coins, setCoins] = useState([]);
@@ -20,8 +21,8 @@ function App() {
       const currentDateTime = new Date().toLocaleString();
       setLastUpdate(currentDateTime);
     };
-    fetchData(); // Fetch data immediately on mount
-    const interval = setInterval(fetchData, 1500000); // Fetch data every 25 minutes
+    fetchData(); 
+    const interval = setInterval(fetchData, 1500000); 
     return () => clearInterval(interval);
   }, []);
   function calculateTotalMarketCap() {
@@ -58,9 +59,10 @@ function App() {
     <>
       <BrowserRouter basename="/cryptolyze">
         <Routes>
-          <Route path="/" element={<Header/>}>
-          <Route index element={coins && <Main coins={coins} totalSupply={calculateTotalSupply} totalVolume={calculateTotalVolume} totalMarketCap={calculateTotalMarketCap} />}/>
-          <Route path="/about" element={<About/>}/>
+          <Route element={<Header/>}>
+          <Route index element={coins && <Home coins={coins} totalSupply={calculateTotalSupply()} totalVolume={calculateTotalVolume()} totalMarketCap={calculateTotalMarketCap()} lastUpdate={lastUpdate} />}/>
+          <Route path="about" element={<About/>}/>
+          <Route path=":id" element={<Crypto/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

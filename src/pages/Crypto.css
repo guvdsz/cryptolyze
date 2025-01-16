@@ -1,0 +1,18 @@
+.crypto-section {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 1000px;
+}
+.crypto-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    & img {
+        width: 50px;
+    }
+    & h1 {
+        font-size: 1.75rem;
+    }
+}
