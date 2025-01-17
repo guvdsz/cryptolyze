@@ -7,7 +7,7 @@ import About from "./pages/About";
 import Crypto from "./pages/Crypto";
 import { Router, BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
-  const [coins, setCoins] = useState([]);
+  const [coins, setCoins] = useState(null);
   const [lastUpdate, setLastUpdate] = useState("");
   useEffect(() => {
     const fetchData = () => {
@@ -60,7 +60,7 @@ function App() {
       <BrowserRouter basename="/cryptolyze">
         <Routes>
           <Route element={<Header/>}>
-          <Route index element={coins && <Home coins={coins} totalSupply={calculateTotalSupply()} totalVolume={calculateTotalVolume()} totalMarketCap={calculateTotalMarketCap()} lastUpdate={lastUpdate} />}/>
+          <Route index element={coins ? <Home coins={coins} totalSupply={calculateTotalSupply()} totalVolume={calculateTotalVolume()} totalMarketCap={calculateTotalMarketCap()} lastUpdate={lastUpdate} /> : <div className="loader"></div>}/>
           <Route path="about" element={<About/>}/>
           <Route path=":id" element={<Crypto/>}/>
           </Route>

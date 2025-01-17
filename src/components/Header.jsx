@@ -5,7 +5,7 @@ import { GoHome } from "react-icons/go";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
-import { NavLink, useLocation, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { useState } from "react";
 export default function Header(props) {
   const [toggle, setToggle] = useState(false);

@@ -56,7 +56,7 @@
     max-width: 500px;
 }
 @media screen and (max-width: 552px) {
-    .coin-name .symbol {
+    .coin-name .name {
         display: none;
     }
 }

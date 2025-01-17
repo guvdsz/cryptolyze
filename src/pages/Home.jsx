@@ -5,7 +5,6 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import OverviewCard from "../components/OverViewCard";
 export default function Home(props) {
-  console.log(props.totalSupply)
   const [coinSelect, setCointSelect] = useState("") 
   const cryptoCards = props.coins.map((coin) => {
     return (
@@ -35,9 +34,9 @@ export default function Home(props) {
   return (
   <main>
     <div className="overview-container">
-        <OverviewCard value={props.totalMarketCap} title="Total Market Cap" />
-        <OverviewCard value={props.totalVolume} title="Total Volume" />
-        <OverviewCard value={props.totalSupply} title="Total Suply" />
+        <OverviewCard value={`$${props.totalMarketCap}`} title="Total Market Cap" />
+        <OverviewCard value={`$${props.totalVolume}`} title="Total Volume" />
+        <OverviewCard value={`$${props.totalSupply}`} title="Total Suply" />
         <OverviewCard value={props.lastUpdate} title="Last Update" />
     </div>
     <select name="coinSearch" id="coinSearch" onChange={handleCoinSelector}>

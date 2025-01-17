@@ -5,7 +5,7 @@ header {
     align-items: center;
     gap: 4rem;
     padding: 1.5rem 2rem;
-    border-bottom: 1px solid #111827;
+    border-bottom: 1px solid #11182785;
     background-color: black;
 }
 .header-wrapper {
@@ -13,7 +13,7 @@ header {
     top: 0;
     right: 0;
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
 }
 header .default-nav {
     display: flex;

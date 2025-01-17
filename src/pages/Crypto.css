@@ -1,18 +1,63 @@
 .crypto-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 90vw;
+    gap: 2rem;
     max-width: 1000px;
+    & .overview-card {
+        max-width: 500px;
+    }
+}
+.crypto-header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    gap: 1rem;
+    & img {
+        width: 75px;
+    }
+    & h1 {
+        font-size: 2rem;
+    }
 }
 .crypto-name {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: .75rem;
+}
+.crypto-price {
+    display: flex;
+    align-items: center;
     gap: 1rem;
-    & img {
-        width: 50px;
+    font-size: 1.25rem;
+    & p {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
     }
-    & h1 {
-        font-size: 1.75rem;
+}
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:450px;
+    background-color: #111827;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: border .3s;
+    &:hover {
+        border: 1px solid #fff;
     }
+}
+.positive {
+    color: green;
+}
+.negative {
+    color: red;
 }
