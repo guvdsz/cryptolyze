@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Crypto from "./pages/Crypto";
+import ScrollToTop from "./components/Scroll";
 import { Router, BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   const [coins, setCoins] = useState(null);
@@ -58,6 +59,7 @@ function App() {
   return (
     <>
       <BrowserRouter basename="/cryptolyze">
+      <ScrollToTop/>
         <Routes>
           <Route element={<Header/>}>
           <Route index element={coins ? <Home coins={coins} totalSupply={calculateTotalSupply()} totalVolume={calculateTotalVolume()} totalMarketCap={calculateTotalMarketCap()} lastUpdate={lastUpdate} /> : <div className="loader"></div>}/>

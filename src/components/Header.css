@@ -55,7 +55,7 @@ header .default-nav > a {
     color: #fff;
     align-items: center;
     font-size: 1.5rem;
-    gap: .75rem;
+    gap: .5rem;
     font-weight: bold;
 }
 header .default-nav > a .i {
